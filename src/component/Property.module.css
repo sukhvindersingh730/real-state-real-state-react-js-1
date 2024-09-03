@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.topcontainer{
+    background:rgba(0,0,0,0.4) url("https://i.makeagif.com/media/1-20-2017/27M5Mn.gif");
+    background-blend-mode: darken;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.topcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: x-large;
+}
+@media (max-width: 768px) {
+    .topcontainer{
+        width: 100%;
+        height: 300px;
+    }
+    
+}
+
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.card{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.card h6 ,.card h3 {
+    margin: 10px;
+    margin-left:30px;
+}
+.card h6:hover ,.card h3:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .cardcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 500px;
+    }
+    
+}
+footer{
+    width: 100%;
+    height:auto ;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footerCard1{
+    color: whitesmoke;
+    width: 23%;
+    height:auto ;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footerCard1 ul li a{
+    color: whitesmoke;
+}
+@media (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footerCard1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+}

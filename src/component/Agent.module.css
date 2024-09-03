@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* color: black; */
+    
+}
+.cardContainerAgent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.cardAgent{
+    /* background-color:red; */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s;
+}
+.cardAgent:hover {
+    transform: scale(1.05);
+}
+.cardAgent img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.cardAgent h6 ,.cardAgenth3 {
+    margin: 10px;
+    margin-left:30px;
+}
+.cardAgent h6:hover ,.card h3:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .cardContainerAgent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardAgent{
+        width: 80%;
+        max-width: 500px;
+    }
+    
+}
+footer{
+    width: 100%;
+    height:auto ;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footerCard1{
+    color: whitesmoke;
+    width: 23%;
+    height:auto ;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footerCard1 ul li a{
+    color: whitesmoke;
+}
+@media (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footerCard1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+}
